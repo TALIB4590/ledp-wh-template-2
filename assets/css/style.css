@@ -510,7 +510,7 @@ header {
     font-size: 12px; } }
 
 /* iPads, Tablets(480px-767px) */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   body {
     text-align: center; }
   .mean-container a.meanmenu-reveal span {
