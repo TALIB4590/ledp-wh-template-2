@@ -1,0 +1,22 @@
+#clients {
+    background: $theme-bg-primary;
+}
+#clients.section__area{
+    padding-bottom: 0;
+}
+.services {
+    &__icon {
+        padding-top: 5px;
+        i {
+            font-size: 45px;
+            color: $theme-text-primary;
+        }
+    }
+    &__content{
+                margin-bottom: 60px;
+        h3{
+            font-size: 24px;
+            font-weight: bold;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+@mixin transition {
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+@mixin heading($size, $weight) {
+    font-family: $heading-font-family;
+    color: #313131;
+    margin-top: .0rem;
+    font-style: normal;
+    text-transform: normal;
+    font-size: $size;
+    font-weight: $weight;
+    a {
+        color: inherit;
+    }
+}

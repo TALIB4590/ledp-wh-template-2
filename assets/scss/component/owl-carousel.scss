@@ -1,0 +1,34 @@
+.owl-carousel {
+    .owl-nav {
+        div {
+            background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
+            height: 4rem;
+            left: 2rem;
+            line-height: 4rem;
+            opacity: 0;
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: all 0.3s ease 0s;
+            visibility: hidden;
+            width: 4rem;
+            &:hover {
+                background: #2b96cc;
+                color: #fff;
+            }
+        }
+        div.owl-next {
+            left: auto;
+            right: 2rem;
+        }
+    }
+    &:hover {
+        .owl-nav {
+            div {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}

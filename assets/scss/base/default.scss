@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+html {
+    font-size: $theme-font-size;
+}
+body {
+    font-family: $theme-font-family;
+    font-weight: normal;
+    font-style: normal;
+}
+section {
+    background-color: $section-background;
+    overflow: hidden;
+}
+.section__area {
+    padding: $section-padding;
+}
+.img {
+    max-width: 100%;
+    @include transition;
+}
+.f-left {
+    float: left;
+}
+.f-right {
+    float: right;
+}
+.fix {
+    overflow: hidden;
+}
+
+.theme-overlay {
+    position: relative;
+    &::before {
+        background: #1696e7 none repeat scroll 0 0;
+        content: "";
+        height: 100%;
+        left: 0;
+        opacity: 0.6;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+}
+.separator {
+    border-top: 0.1rem solid #f2f2f2;
+}
+
+[data-overlay] {
+    position: relative;
+    &::before {
+        background: #000 none repeat scroll 0 0;
+        content: "";
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+}

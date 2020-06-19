@@ -1,0 +1,41 @@
+#team {
+    background: $theme-bg-primary;
+    border-top: 45px solid #fff;
+    img{
+        margin-bottom: 10px;
+    }
+    .position{
+        margin-bottom: 10px;
+    }
+    a{
+        font-size: 14px;
+        transition: all .3s ease;
+        -webkit-transition:all .3s ease;
+        -moz-transition:all .3s ease;
+        -ms-transition:all .3s ease;
+        -o-transition:all .3s ease;
+    }
+    a:hover{
+        color: $theme-text-primary;
+        .team__btn::after{
+           transform: translateX(15px);
+        }
+    }
+    .team__btn{
+        position: relative;
+
+    }
+    .team__btn::after{
+        position: absolute;
+        content: '\2192';
+        transition: all .3s;
+        -webkit-transition:all .3s;
+        -moz-transition:all .3s;
+        -ms-transition:all .3s;
+        -o-transition:all .3s;;
+        margin-left: 5px;
+    }
+}
+#team.section__area{
+    padding: 2rem 0;
+}

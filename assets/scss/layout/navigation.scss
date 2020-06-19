@@ -1,0 +1,83 @@
+header {
+    background-color: #fff;
+//   -moz-box-shadow: 0 0 3px rgb(76, 81, 109);
+//   -webkit-box-shadow: 0 0 3px rgb(76, 81, 109);
+//   box-shadow: 0 0 3px rgb(240, 240, 245);
+    // .logo {
+    //     img {
+    //     }
+    // }
+    .main__menu {
+        ul {
+            li {
+                display: inline-block;
+                margin: 0 20px;
+                position: relative;
+                &:hover > a {
+                    color: $theme-text-primary;
+                }
+                &:hover > ul.submenu {
+                    opacity: 1;
+                    visibility: visible;
+                    top: 100%;
+                    background: #fff;
+                }
+                a {
+                    font-weight: 500;
+                    padding: 30px 0px;
+                    display: block;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #000;
+                    // font-weight: bold;
+                }
+                ul.submenu {
+                    position: absolute;
+                    top: 110%;
+                    left: 0;
+                    min-width: 250px;
+                    // background: red;
+                    border-top: 2px solid $theme-text-primary;
+                    transition: 0.3s;
+                    text-align: left;
+                    box-shadow: 0px 15px 30px 0px rgba(0, 3, 142, 0.1);
+                    padding: 15px 0;
+                    opacity: 0;
+                    visibility: hidden;
+                    -webkit-transition: 0.3s;
+                    -moz-transition: 0.3s;
+                    -ms-transition: 0.3s;
+                    -o-transition: 0.3s;
+                    li {
+                        display: block;
+                        margin: 0;
+                        a {
+                            padding: 9px 25px;
+                            text-transform: capitalize;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .header__right {
+        &__btn {
+        }
+        &__search {
+            i {
+                font-size: 20px;
+                margin-left: 40px;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+.down__arrow::after{
+    position: absolute;
+    content:"\21B4";
+    margin-left: 5px;
+    font-size: 18px;
+    font-weight: bold;
+
+}

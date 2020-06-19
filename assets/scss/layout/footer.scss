@@ -1,0 +1,39 @@
+.footer {
+    background: #333;
+    color: #f4f4f4;
+    h3{
+        color: #acaaab;
+    }
+    &__menu {
+        li {
+            font-size: 16px;
+            position: relative;
+            a {
+                margin-left: 16px;
+                color: #818287;
+                &:hover {
+                    color: $theme-text-primary;
+                    text-decoration: none;
+                }
+            }
+            &::before{
+                position: absolute;
+                content: "\203A";
+                font-weight: bold;
+                color: $theme-text-primary;
+            }
+        }
+    }
+    .social__links{
+        i{
+            font-size: 20px;
+            margin: 5px;
+            background: rgba(112, 110, 110, 0.801);
+            padding: 8px 12px;
+            cursor: pointer;
+            &:hover{
+                color: $theme-text-primary;
+            }
+        }
+    }
+}

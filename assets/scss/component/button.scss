@@ -1,0 +1,41 @@
+button {
+    color: $theme-text-primary;
+    outline: medium none;
+    &:focus {
+        outline: 0;
+    }
+}
+.button {
+    @include transition;
+    &:focus {
+        text-decoration: none;
+        outline: none;
+    }
+}
+.btn{
+    -moz-user-select: none;
+    background: $theme-text-primary none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 20rem;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    line-height: 1;
+    margin-bottom: 0;
+    padding: 1.3rem 3.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    @include transition;
+    vertical-align: middle;
+    white-space: nowrap;
+    margin-right: 10px;
+}
+.breadcrumb {
+    > .active {
+        color: #888;
+    }
+}

@@ -1,0 +1,23 @@
+/* ========================
+	  !preloader
+==========================*/
+#preloader {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+#preloader__status {
+    background-image: url("/assets/img/preloader.svg");
+    background-repeat: no-repeat;
+    width: 20rem;
+    height: 20rem;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
